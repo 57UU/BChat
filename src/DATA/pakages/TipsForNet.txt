@@ -1,0 +1,7 @@
+toSeriver:
+    0 is verify account: "0^sb^123"
+    1 is send msg: "1^dsb^hello"
+LoginCode:
+    0 account or passwd Error
+    1 allRight
+    2 alreadOnline
