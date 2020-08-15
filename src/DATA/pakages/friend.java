@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.io.Serializable;
 public class friend implements Serializable{
     public String name;
-    public long ID; 
+    public String ID;
     ArrayList<String> f=new ArrayList<String>();
     public ArrayList<String> text;
     int f_now;//the address of file in list
     String dirPath;
-    public friend(long friendID){
+    public friend(String friendID){
         dirPath="/History"+friendID; 
     }
     public boolean older(){

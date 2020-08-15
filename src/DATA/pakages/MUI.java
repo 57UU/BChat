@@ -18,20 +18,20 @@ public class MUI {
     myself ms;
     JFrame jf;
     boolean face=false;
-    long myID;
+    String myID;
     public static void main(String[] args){
-        friend pig=new friend(250);
+        friend pig=new friend("250");
         pig.name="pig";
         ArrayList<String> temp=new ArrayList<String>();
         temp.add("pig");
         pig.text=temp;
-        friends l=new friends(1);
+        friends l=new friends("1");
         l.allFrd.add(pig);
-        MUI m=new MUI(1);
+        MUI m=new MUI("1");
         m.frd=l;
         m.build();
     }
-    public MUI (long myID){
+    public MUI (String myID){
         this.myID=myID;
     } 
     public void build() {

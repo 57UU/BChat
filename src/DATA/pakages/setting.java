@@ -37,6 +37,7 @@ public class setting implements Serializable{
         jf.setLocationRelativeTo(null);
         jf.setResizable(false);
         jf.setIconImage(show.getImage());
+
         Box pl = new Box(BoxLayout.PAGE_AXIS);
         int many=lst.everyone.size();
         Box[] b=new Box[many];

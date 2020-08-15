@@ -1,7 +1,8 @@
-toSeriver:
+toServer:
     0 is verify account: "0^sb^123"
     1 is send msg: "1^dsb^hello"
-LoginCode:
+    2 is get friends ;
+toClint:
     0 account or passwd Error
     1 allRight
-    2 alreadOnline
+    2 alreadyOnline

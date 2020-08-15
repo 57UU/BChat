@@ -1,7 +1,5 @@
-import DATA.pakages.Net;
-import DATA.pakages.accountCode;
-import DATA.pakages.setting;
-import DATA.pakages.show;
+import DATA.pakages.*;
+
 import javax.swing.JFrame;
 public class BChat {
     Net net;
@@ -12,13 +10,18 @@ public class BChat {
         setting.setUIFont();
         String IP="127.0.0.1";
         int com=8001;
-        boolean TFinfo=false;
         net=new Net(IP,com);
-        while (TFinfo==false){
-            accountCode acc=new accountCode(new JFrame());
-            String[] loginInfo=acc.inf;
-            TFinfo= net.verify(loginInfo);
+        Thread t=new Thread(net);
+        t.start();
+
+        while (net.status){
+            show.m("info", "Login successfully");
+            show.m("info", net.frds.toString());
         }
-        show.m("info","Login successfully");
+    }
+    class callBack implements ActionHappen{
+        public void go(){
+
+        }
     }
 }
