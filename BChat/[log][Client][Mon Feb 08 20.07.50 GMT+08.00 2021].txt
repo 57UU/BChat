@@ -1,0 +1,2 @@
+[Mon Feb 08 20:07:47 GMT+08:00 2021][Fatal]<Can't connect to the server>java.net.ConnectException: Connection refused: connect
+[Mon Feb 08 20:07:47 GMT+08:00 2021][Track]sending:0123123
